@@ -211,26 +211,17 @@ CPEs 是一套標準化方法，用於識別和枚舉應用程式、作業系統
 
 ---
 
-## Vulhub 安裝
+## Vulhub 下載
 
 ```bash
-# Download the latest version of the vulhub 
-git clone https://github.com/vulhub/vulhub.git  
+# Use wget to download the repository(bc. it's faster than git clone)
+wget https://github.com/vulhub/vulhub/archive/master.zip -O vulhub-master.zip 
+unzip vulhub-master.zip
 ```
 
 ```bash
 # Entry vulnerability directory 
-cd /path/to/vuln/ 
-```
-
-```bash
-# Compile (optional) 
-docker compose build 
-```
-
-```bash
-# Run 
-docker compose up -d
+cd vulhub-master
 ```
 
 ---
@@ -273,3 +264,38 @@ docker compose up -d
 ## 漏洞掃描
 
 - 使用Greenbone掃描漏洞
+
+**執行此實驗時，請確保你在台東大學校園網路中，否則可能被視為攻擊行為。**
+
+---
+
+## 建立 Asset
+
+- 在Greenbone中建立一個新的Asset，用於掃描漏洞。
+- IP：`210.240.160.219`
+
+![](./host.png)
+
+---
+
+## 建立 Target
+
+![](./target.png)
+
+---
+
+## 建立 Task
+
+![](./task.png)
+
+---
+
+## 開始掃描
+
+![](./start.png)
+
+---
+
+## 掃描結果
+
+![w:1200](./temp_result.png)

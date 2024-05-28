@@ -88,3 +88,7 @@ Linux
 ```bash
 sudo docker-compose up -d
 ```
+
+## Greenbone 登入
+
+- 網址：[http://localhost:9392](https://localhost:9392)

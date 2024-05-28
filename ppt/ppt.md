@@ -197,3 +197,27 @@ CPEs 是一套標準化方法，用於識別和枚舉應用程式、作業系統
 - [VulnHub](https://www.vulnhub.com/)
 
 ![w:512](https://vulhub.org/img/logo.svg)
+
+---
+
+## Vulhub 安裝
+
+```bash
+# Download the latest version of the vulhub 
+git clone https://github.com/vulhub/vulhub.git  
+```
+
+```bash
+# Entry vulnerability directory 
+cd /path/to/vuln/ 
+```
+
+```bash
+# Compile (optional) 
+docker compose build 
+```
+
+```bash
+# Run 
+docker compose up -d
+```

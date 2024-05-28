@@ -60,6 +60,7 @@ Docker 是一個開源的容器化平台，它允許開發者將應用程式及�
     - ```bash
       sudo apt-get update
       curl -sSL https://get.docker.com | sh
+      sudo apt install -y docker-compose
       ```
 
 ---
@@ -260,4 +261,15 @@ docker compose up -d
 cd vulhub/airflow/CVE-2020-17526
 ```
 
+Linux 環境要加上 `sudo`
+
 ```bash
+docker compose run airflow-init
+docker compose up -d
+```
+
+---
+
+## 漏洞掃描
+
+- 使用Greenbone掃描漏洞

@@ -231,3 +231,33 @@ docker compose build
 # Run 
 docker compose up -d
 ```
+
+---
+
+## 實戰演練
+
+這次以 `CVE-2020-17526` 為例，進行滲透測試。
+
+---
+
+## 漏洞描述
+
+> Incorrect Session Validation in Apache Airflow Webserver versions prior to 1.10.14 with default config allows a malicious airflow user on site A where they log in normally, to access unauthorized Airflow Webserver on Site B through the session from Site A. This does not affect users who have changed the default value for `[webserver] secret_key` config. -- [CVE-2020-17526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17526)
+
+---
+
+## 講人話
+
+> 我忘記改配置文件了!
+
+就是在Apache Airflow Webserver的某些版本中，如果保持默認配置，當一個惡意用戶在一個站點（Site A）正常登錄後，他可以利用同一個會話（session）信息在另一個站點（Site B）進行未授權的訪問。這是因為默認的[webserver] secret_key配置沒有被修改，導致跨站點的會話管理存在安全漏洞。
+
+---
+
+## 啟動漏洞環境
+
+```bash
+cd vulhub/airflow/CVE-2020-17526
+```
+
+```bash

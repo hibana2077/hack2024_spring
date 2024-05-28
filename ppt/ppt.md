@@ -338,3 +338,10 @@ docker compose up -d
 - [Greenbone Community Edition](https://greenbone.github.io/docs/latest/22.4/container/index.html)
 - [VulnHub](https://github.com/vulhub/vulhub)
 - [CVE-2020-17526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17526)
+
+---
+
+<!-- _backgroundImage: url('https://marp.app/assets/hero-background.jpg')-->
+<!-- _class: lead -->
+
+## 結束

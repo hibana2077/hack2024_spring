@@ -305,3 +305,36 @@ docker compose up -d
 ## 掃描結果 II
 
 ![](./result.png)
+
+---
+
+## 掃描結果 III
+
+![](./result3.png)
+
+[CVE-2022-45188](https://nvd.nist.gov/vuln/detail/CVE-2022-45188)
+
+---
+
+## 生成報告
+
+![](./gen_report.png)
+
+![](./gen_report2.png)
+
+---
+
+## 結論
+
+- Docker 的基本概念與操作
+- 漏洞資料庫的認識
+- Greenbone 的基礎操作
+
+---
+
+## 參考資源
+
+- [Docker Documentation](https://docs.docker.com/)
+- [Greenbone Community Edition](https://greenbone.github.io/docs/latest/22.4/container/index.html)
+- [VulnHub](https://github.com/vulhub/vulhub)
+- [CVE-2020-17526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17526)

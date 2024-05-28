@@ -11,4 +11,9 @@ class: invert
 
 ---
 
-# 
+# 簡介
+
+- 課程目標
+    - Docker 的基本操作
+    - Greenbone 的基本操作
+    - 滲透測試的基本操作
